@@ -9,13 +9,22 @@
 */
 
 
+function shortiesOnly(arr){
+    var newArr = []
 
+for(var i = 0; i < arr.length; i = i + 1){
+//
+  var elementArr = arr[i]
+   if (elementArr.length <= 4){
+    newArr.push(elementArr)
+     }
 
+  }
+      console.log(newArr);
+      return newArr
+}
 
-
-
-
-
+// revisar porque no lee el segundo array
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 
@@ -33,17 +42,14 @@ var allNames = [
 ]
 
 var moreNames = [
-  'Caroline',
-  'Kristen',
-  'Kate',
-  'Matt',
-  'Ken'
+  "Caroline",
+  "Kristen",
+  "Kate",
+  "Matt",
+  "Ken"
 ]
-
-
-
 var shortList = shortiesOnly(allNames)
-var littleNameList = shortiesOnly(allNames)
+var littleNameList = shortiesOnly(moreNames)
 
 
 console.assert( shortList.length === 4 )

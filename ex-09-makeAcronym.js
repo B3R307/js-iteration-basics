@@ -8,11 +8,55 @@
 //  => 'PDF'
 
 
+function makeAcronym(str){
+  var acronym = []
+  var str = str.toUpperCase()
+   // console.log(str);
 
+  var num = []
+  var char = []
+  // console.log(str.length);
 
+for(var i = 0; i < str.length; i++){
+  var charSize = str[i]
 
+   if( charSize === ''){
+     var n = i
+     num.push(n)
+     // console.log(n);
+   }
+    // console.log(num);
+    // console.log(num.lenght);
 
+}
 
+   var ff = num[0]
+   var word = str.slice(0, ff)
+    char.push(word)
+
+    for(var m = 0; m < num.lenght; m++){
+      var p = num[m]
+      // console.log(p);
+
+    var f= num[m + 1]
+    // console.log(f);
+
+    var words = str.slice((p+1), f)
+       char.push(words)
+       // console.log(char);
+    }
+
+    for(var i = 0; i < char.lenght; i++){
+      var lis = char[i]
+      var wor = lis[0]
+      acronym.push(wor)
+      // console.log(acronym);
+      var acro = acronym.join('')
+    }
+
+   console.log(acro);
+   return acro
+}
 
 //*~*~*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 

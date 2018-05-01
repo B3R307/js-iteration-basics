@@ -11,7 +11,19 @@
 
 
 
+function isPalindrome(str){
+  var palindromeHere = false
 
+for(var i = 0; i < str.length; i++){
+  var strElem = str[i]
+
+  
+}
+
+
+
+  return palindromeHere
+}
 
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~

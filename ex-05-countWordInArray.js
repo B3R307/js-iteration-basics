@@ -11,9 +11,23 @@
 
 
 
+ function countWordInArray(str, arr){
+  var howOften = 0
 
+// console.log(str);
+// console.log(arr);
 
+   for(var i = 0; i < arr.length; i ++){
+       var elementArr = arr[i]
+  if(str === elementArr){
+       howOften = howOften + 1
+       // console.log(elementArr);
+       }
 
+    }
+  console.log(howOften);
+  return howOften
+ }
 
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
@@ -22,6 +36,7 @@ console.assert( countWordInArray('saw', sentenceArray_1) === 3)
 console.assert( countWordInArray('take', sentenceArray_1) === 1)
 console.assert( countWordInArray('brother', sentenceArray_1) === 1)
 console.assert( countWordInArray('sister', sentenceArray_1) === 1)
+console.assert(countWordInArray('Berenice', sentenceArray_1)=== 0)
 
 var sentenceArray_2 = ["sister", "nancy", "take", 'the', 'first', 'right', 'and', 'take', 'the', 'third', 'left', 'on', 'sister', 'street']
 console.assert( countWordInArray('take', sentenceArray_2) === 2)

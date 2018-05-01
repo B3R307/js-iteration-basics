@@ -9,10 +9,22 @@
  * from the previous queestion
 */
 
+function getFirstLetters(arr){
+  var onlyFirstChar = []
+  // console.log(arr);
+  // console.log(arr.length)
 
+ for(var i = 0; i < arr.length; i++){
+   var arrElem = arr[i]
+   var char = arrElem[0]
 
+   onlyFirstChar.push(char)
+     }
 
+  console.log(onlyFirstChar)
+  return onlyFirstChar
 
+}
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 let outputArray1 = getFirstLetters(['wow', 'milk', 'howdy', 'sweet', 'bye'])

@@ -16,9 +16,33 @@
  *
 */
 
+function simpOrSamp(arrOfStr){
+  var newArray = []
 
+for(var i = 0; i < arrOfStr.length ; i = i + 1){
 
+  var elementArr = arrOfStr[i]
 
+   if(elementArr.length <= 5){
+
+    // declaro la condicion en 5 debido a que la numeracion inicia en 0
+
+     newArray.push(elementArr + " Sampson")
+     // console.log(elementArr[i] + newArray);
+   }
+
+      else if (elementArr.length >= 5){
+
+        newArray.push(elementArr + " Simpson")
+        // console.log(elementArr[i] + newArray);
+
+      }
+}
+  console.log(newArray);
+  return newArray
+}
+
+// assertion failed line 72
 
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
