@@ -25,7 +25,7 @@
        }
 
     }
-  console.log(howOften);
+  // console.log(howOften);
   return howOften
  }
 

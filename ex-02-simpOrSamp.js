@@ -38,7 +38,7 @@ for(var i = 0; i < arrOfStr.length ; i = i + 1){
 
       }
 }
-  console.log(newArray);
+  // console.log(newArray);
   return newArray
 }
 

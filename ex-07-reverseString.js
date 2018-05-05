@@ -9,29 +9,31 @@
 */
 
  function reverseString(str){
-    var newStr = []
+    var newStrArr = []
 
+    // var travisReverse = ""
     // console.log(str.length);
-    var strSiz = str.length
+
     // console.log(strSiz);
     // console.log(str);
 
-    for(var i = 0; i <= str.length; i++ ){
+    for(var i = str.length -1; i >= 0; i = i - 1){
+       strEl = str[i]
+
+        newStrArr.push(strEl)
 
 
-        var rvrs = strSiz - i
-        var lastWord = str[rvrs]
-        newStr.push(lastWord)
-
-        var strReverse = newStr.join('')
-
+        // travisReverse += strEl
     }
 
-    console.log(newStr);
-    return newStr
+    var strReve = newStrArr.join('')
+    // console.log(strReve);
+
+    // OUTPUT string (hopefully the reversed value of the input)
+    return strReve
+
+    // return travisReverse
 }
-
-
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 console.assert( reverseString('books') === 'skoob')

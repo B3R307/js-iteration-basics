@@ -11,52 +11,29 @@
 function makeAcronym(str){
   var acronym = []
   var str = str.toUpperCase()
-   // console.log(str);
+   // console.log(str[0]);
 
-  var num = []
-  var char = []
-  // console.log(str.length);
 
-for(var i = 0; i < str.length; i++){
-  var charSize = str[i]
+      str.split('')
+      var newArr = str.split(' ')
+      // console.log(newArr)
 
-   if( charSize === ''){
-     var n = i
-     num.push(n)
-     // console.log(n);
-   }
-    // console.log(num);
-    // console.log(num.lenght);
+   for(var i = 0; i < newArr.length; i++){
+     // console.log(newArr[0]);
+    var onlyFirst = newArr[i]
+    var char = onlyFirst[0]
 
+    acronym.push(char)
+    var acronymPerfect = acronym.join('')
+
+
+    }
+    console.log(acronymPerfect);
+    return acronymPerfect
 }
 
-   var ff = num[0]
-   var word = str.slice(0, ff)
-    char.push(word)
+ // console.log( str.split(' '));
 
-    for(var m = 0; m < num.lenght; m++){
-      var p = num[m]
-      // console.log(p);
-
-    var f= num[m + 1]
-    // console.log(f);
-
-    var words = str.slice((p+1), f)
-       char.push(words)
-       // console.log(char);
-    }
-
-    for(var i = 0; i < char.lenght; i++){
-      var lis = char[i]
-      var wor = lis[0]
-      acronym.push(wor)
-      // console.log(acronym);
-      var acro = acronym.join('')
-    }
-
-   console.log(acro);
-   return acro
-}
 
 //*~*~*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 

@@ -5,8 +5,7 @@
  * Write a function called `getFirstLetters` that takes an array of strings
  * and returns another array of strings with only the first letter
  *
- * Hint: you may want to invoke the `reverseString` function you wrote earlier
- * from the previous queestion
+ 
 */
 
 function getFirstLetters(arr){
@@ -19,7 +18,7 @@ function getFirstLetters(arr){
    var char = arrElem[0]
 
    onlyFirstChar.push(char)
-     }
+ }
 
   console.log(onlyFirstChar)
   return onlyFirstChar

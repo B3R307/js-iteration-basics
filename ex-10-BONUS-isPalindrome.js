@@ -13,17 +13,36 @@
 
 function isPalindrome(str){
   var palindromeHere = false
+  var palindrome = []
 
-for(var i = 0; i < str.length; i++){
-  var strElem = str[i]
 
-  
+for(var i = str.length -1; i >= 0; i = i - 1){
+  var strElem =  str[i]
+// console.log(strElem);
+
+  palindrome.push(strElem)
+
+
+  // console.log(palindrome.join(''))
+
+   }
+   // console.log(palindrome);
+
+      var palin = palindrome.join('')
+      // console.log(palin)
+  if(palin === str){
+      palindromeHere = true
+      return true
+  }else{
+      palindromeHere = false
+      return false
+
+  }
+  console.log(str);
+  console.log(palindromeHere);
+
 }
 
-
-
-  return palindromeHere
-}
 
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~

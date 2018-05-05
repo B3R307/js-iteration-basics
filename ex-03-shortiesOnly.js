@@ -20,7 +20,7 @@ for(var i = 0; i < arr.length; i = i + 1){
      }
 
   }
-      console.log(newArr);
+      // console.log(newArr);
       return newArr
 }
 
